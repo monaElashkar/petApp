@@ -74,21 +74,25 @@ class _NotificationsState extends State<Notifications> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     CircleAvatar(radius: 5,backgroundColor: bascolore,),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 5),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Text("${notifi[index]["title"]}",
-                            style: TextStyle(fontSize: 13,  color: Colors.black),
-                            maxLines: 2,textAlign: TextAlign.start,
-                          overflow: TextOverflow.ellipsis,
-                            softWrap: true,
-                          ),
-                          SizedBox(height: 5,),
-                          Text("${notifi[index]["date"]}",style: TextStyle(fontSize: 13, color: Colors.grey),),
-                        ],
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 5),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Expanded( 
+                              child: Text("${notifi[index]["title"]}",
+                                style: TextStyle(fontSize: 13,  color: Colors.black),
+                                maxLines: 2,textAlign: TextAlign.start,
+                              overflow: TextOverflow.ellipsis,
+                                softWrap: true,
+                              ),
+                            ),
+                            SizedBox(height: 5,),
+                            Expanded(child: Text("${notifi[index]["date"]}",style: TextStyle(fontSize: 13, color: Colors.grey),)),
+                          ],
+                        ),
                       ),
                     )
                   ],

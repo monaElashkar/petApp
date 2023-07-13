@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "606953097196",
+    "project_id": "petsapp-fad2e",
+    "storage_bucket": "petsapp-fad2e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606953097196:android:56f3e15b52bade5e68e2c9",
+        "android_client_info": {
+          "package_name": "com.example.pets_world"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606953097196-hrh1668gv1em5dkrpr7o0kcaejcj9r1o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATKVkKfqqWjX8oEBei-zE9GOOxqjzTUjw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "606953097196-hrh1668gv1em5dkrpr7o0kcaejcj9r1o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
